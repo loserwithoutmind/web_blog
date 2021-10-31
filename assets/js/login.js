@@ -33,7 +33,7 @@ $(function() {
         // 1. 阻止默认的提交行为
         e.preventDefault()
             // 2. 发起Ajax的POST请求
-        $.post('http://api-breakingnews-web.itheima.net/api/reguser', {
+        $.post('/api/reguser', {
                 username: $('#form_reg [name=username]').val(),
                 password: $('#form_reg [name=password]').val()
             },
